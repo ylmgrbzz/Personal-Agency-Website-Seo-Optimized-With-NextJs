@@ -3,6 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Services = ({ services }) => {
+  if (!services || services.length === 0) {
+    return <div>No services available.</div>;
+  }
   return (
     <div className={style.container}>
       <div className={style.info}>
@@ -24,9 +27,11 @@ const Services = ({ services }) => {
                     />
                   ) : (
                     <Image
-                      src={`${process.env.NEXT_PUBLIC_URL}/img/${service.photo}`}
-                      width="100%"
-                      height="100%"
+                      src={`/img/${service.photo}`}
+                      //   width="100%"
+                      //   height="100%"
+                      width={1000}
+                      height={1000}
                       layout="responsive"
                       objectFit="cover"
                       alt=""
