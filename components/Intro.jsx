@@ -8,7 +8,7 @@ const Intro = () => {
       {/* <div className={`${style.circle} ${style.circle1}`} />
       <div className={`${style.circle} ${style.circle2}`} /> */}
       <Circle backgroundColor="#01c686" top="-45vh" left="-45vh" />
-      {/* <Circle backgroundColor="#01c686" right="-40vh" /> */}
+      <Circle backgroundColor="#01c686" right="-40vh" />
       <div className={style.card}>
         <h1 className={style.title}>
           <span className={style.brandName}>AV0CAD0</span> DIGITAL PRODUCT
@@ -21,12 +21,7 @@ const Intro = () => {
         <button className={style.button}>DISCOVER</button>
       </div>
       <div className={style.card}>
-        {/* <Image
-          src={process.env.NEXT_PUBLIC_URL + "/img/Avocado.png"}
-          layout="fill"
-          objectFit="cover"
-          alt=""
-        /> */}
+        <Image src="/img/Avocado.png" layout="fill" objectFit="cover" alt="" />
       </div>
     </div>
   );
