@@ -1,10 +1,8 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
   reactStrictMode: true,
-  swcMinify: true,
   images: {
-    domains: ["localhost", "images.pexels.com"],
-    loader: "imgix",
-    path: "",
+    domains: ["images.pexels.com"],
+    // loader: "imgix",
+    // path: "",
   },
 };
