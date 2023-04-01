@@ -30,8 +30,8 @@ const Services = ({ services }) => {
                       src={`/img/${service.photo}`}
                       //   width="100%"
                       //   height="100%"
-                      width={1000}
-                      height={1000}
+                      width={200}
+                      height={200}
                       layout="responsive"
                       objectFit="cover"
                       alt=""
